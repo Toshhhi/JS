@@ -1,2 +1,2 @@
 # JS
-A code repo for jasascript series
+A code repo for javascript series
