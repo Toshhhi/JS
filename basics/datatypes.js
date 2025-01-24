@@ -19,6 +19,7 @@ JS is a dynamically typed language
     if you check the data type of null it will say object 
 
  2. non primitive or refrence type (direct ref. can be allocated in the memory) : 
+ 
  *Array-
     const heores = [1,2,3,4,5]
 *object-
@@ -31,6 +32,11 @@ JS is a dynamically typed language
     console.log("hello-world-yara")
     }
 
- */
+ 
+MEMORY 
+1. stack ( used in primitive ) : copy of variable
+2. heap ( used in non primitive ) : refrence of value 
 
+*/
 
+let myYT = "toshi is gay"
