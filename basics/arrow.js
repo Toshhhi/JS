@@ -7,10 +7,10 @@ const user = {
         console.log(this); // this refers to the current context that what is that we are talking about rn 
     }
 }
-//console.log(this);
-//user.welcomeMessage()
-//user.username = "xyz"
-// console.log(this);// since if we did not call any fucntion or object our current context is empty  
+// user.welcomeMessage()
+
+user.username = "xyz"
+console.log(this);// since if we did not call any fucntion or object our current context is empty  
 //user.welcomeMessage()
 
 
@@ -26,10 +26,11 @@ const user = {
 // }
 
 //DECLARING AN ARROW FUNCTION
-// const one = () => {
-//     let username = "toshika"
-//     console.log(this.username); // gives the same o/p , so "this" doesnt even work in arrow functions like that 
-// }
+const one = () => {
+    let username = "toshika"
+    console.log(this.username); // gives the same o/p , so "this" doesnt even work in arrow functions like that 
+}
+one()
 
 
 //arrow function 

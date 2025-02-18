@@ -49,9 +49,9 @@ const allhero = veg.concat(fruits) // concat returns new array merged
 const spread = [...fruits,...veg] // spreaded each element of the arrays into individual strings and then merged those separate elements together
 console.log(spread);
 
-console.log(Array.isArray("toshika")); // to check if this is an array 
-console.log(Array.from("toshika")); // to convert in an array 
-console.log(Array.from({name:"toshika"})); // if array from an object has to be made, the it must be specified of what should be the array 
+// console.log(Array.isArray("toshika")); // to check if this is an array 
+// console.log(Array.from("toshika")); // to convert in an array 
+// console.log(Array.from({name:"toshika"})); // if array from an object has to be made, the it must be specified of what should be the array 
 // just console.log(Array.from({name:"toshika"})); will give an empty array cause it does not know what to print 
 
 
@@ -60,7 +60,8 @@ console.log(Array.from({name:"toshika"})); // if array from an object has to be 
 let score1 = 100; 
 let score2 = 200; 
 let score3 = 300; 
-console.log(Array.of(score1,score2,score3)); // .of returns a new array from set of elements 
+const combine = Array.of(score1,score2,score3); // .of returns a new array from set of elements 
+console.log(combine);
 
 
 

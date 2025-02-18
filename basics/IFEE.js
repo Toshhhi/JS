@@ -9,7 +9,7 @@
 
 //to execute ifee: function ko parenthesis() ke ander wrap kardenge and call bhi ()parenthesis se karege
 //eg:
-(function chai(){ //named ifee
+(function(){ //named ifee
     console.log(`db connected`);  
 })();
 
