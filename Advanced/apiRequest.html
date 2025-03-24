@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api requests</title>
+</head>
+<body>
+    <!-- Button to fetch avatar link -->
+<button id="fetchButton">Fetch Data</button>
+
+<!-- Paragraph to display the avatar URL -->
+<p id="avatarLink"></p>
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'; // API URL
+    const req = new XMLHttpRequest(); // Create request object
+
+    req.open('GET', requestUrl, true); // Open GET request
+    req.send(); // Send request
+
+    req.onreadystatechange = function () {
+        if (req.readyState === 4 && req.status === 200) { // Check if request is done
+            const data = JSON.parse(req.responseText); // Parse JSON response
+            
+            document.getElementById('fetchButton').addEventListener('click', function () {
+                const avatarUrl = data.avatar_url; // Get avatar URL
+                document.getElementById('avatarLink').innerHTML = 
+                    `<a href="${avatarUrl}" target="_blank">${avatarUrl}</a>`; // Set link
+            });
+        }
+    };
+</script>
+</html>
